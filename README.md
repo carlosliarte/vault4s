@@ -1,4 +1,6 @@
-## INSTALLATION VAULT IN LOCAL MODE
+## Vault4s
+
+### INSTALLATION VAULT IN LOCAL MODE
 
 https://gist.github.com/exAspArk/e210523a4bcb988cdfb24a114d46ddf0
 
@@ -11,6 +13,8 @@ https://gist.github.com/exAspArk/e210523a4bcb988cdfb24a114d46ddf0
 #### Export address and root token
 ```export VAULT_ADDR='http://127.0.0.1:8200'```
 ```export VAULT_DEV_ROOT_TOKEN_ID="s.ww3GwhiDkA1Ymbw2lNsleKWi"```
+```export VAULT_TOKEN="s.ww3GwhiDkA1Ymbw2lNsleKWi"```
+
 
 #### Create secret
 ```vault kv put secret/mysqlmb rouser=rouser```
