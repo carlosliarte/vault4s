@@ -1,3 +1,5 @@
+package models
+
 import scala.util.control.NonFatal
 
 case class AppCredentials(role_id: String, secret_id: String)

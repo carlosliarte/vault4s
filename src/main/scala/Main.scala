@@ -1,3 +1,5 @@
+import models.AppCredentials
+import utils.Vault4s
 
 object Main extends App with Vault4s {
   val appName = "mysqlmbtest"
