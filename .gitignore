@@ -3,7 +3,6 @@ target-intellij
 .classpath
 .project
 .settings
-*.iml
 .idea
 *.pyc
 build
