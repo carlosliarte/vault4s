@@ -38,7 +38,7 @@ trait Vault4s {
     data.values("data").asInstanceOf[Map[String, String]]("role_id")
   }
 
-  def getCredentials(appToken: String, version: String, appName: String): Credentials = {
+  def getCredentials(appToken: String, appName: String): Credentials = {
     val response: HttpResponse[String] = Http(s"http://127.0.0.1:8200/v1/secret/data/$appName")
       .header("X-Vault-Token", appToken)
       .asString

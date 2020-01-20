@@ -7,6 +7,6 @@ object Main extends App with Vault4s {
   val secretId = getSecretId(rootToken, appName)
   val roleId = getRoleId(rootToken, appName)
   val appToken = getToken(AppCredentials(roleId, secretId))
-  val credentials = getCredentials(appToken, "1", appName)
+  val credentials = getCredentials(appToken, appName)
   println(credentials)
 }
