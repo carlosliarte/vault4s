@@ -2,8 +2,8 @@ import models.AppCredentials
 import utils.Vault4s
 
 object Main extends App with Vault4s {
-  val appName = "mysqlmbtest"
-  val rootToken = "s.ww3GwhiDkA1Ymbw2lNsleKWi"
+  val appName = "test"
+  val rootToken = "test"
   val secretId = getSecretId(rootToken, appName)
   val roleId = getRoleId(rootToken, appName)
   val appToken = getToken(AppCredentials(roleId, secretId))

@@ -2,11 +2,8 @@
 
 ### INSTALLATION VAULT IN LOCAL MODE
 
-#### Donwload vault
-```https://www.vaultproject.io/downloads/```
-
-#### Create alias and aggregate to .zshrc
-```alias vault='/Users/cliarte/Documents/vault'```
+#### Install vault
+```brew install vault```
 
 #### Init server
 ```vault server -dev```
@@ -21,7 +18,7 @@
 
 
 #### Create secret
-```vault kv put secret/mysqlmb user=test```
+```vault kv put secret/test user=test```
 
 #### Get secret
 ```vault kv get secret/test```
