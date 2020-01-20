@@ -4,6 +4,7 @@ import models.{AppCredentials, Credentials}
 import org.json4s.jackson.JsonMethods.{compact, parse, render}
 import org.json4s.{DefaultFormats, JObject}
 import scalaj.http.{Http, HttpResponse}
+import org.json4s.JsonDSL._
 
 trait Vault4s {
   implicit val formats: DefaultFormats.type = DefaultFormats
