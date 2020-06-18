@@ -14,6 +14,21 @@
     <scalatest.version>3.0.7</scalatest.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>maven</id>
+      <url>https://repo1.maven.org/maven2/</url>
+    </repository>
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>https://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>org.scalaj</groupId>
@@ -34,6 +49,16 @@
       <groupId>org.scala-lang.modules</groupId>
       <artifactId>scala-parser-combinators_2.11</artifactId>
       <version>1.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe.scala-logging</groupId>
+      <artifactId>scala-logging_2.11</artifactId>
+      <version>3.9.2</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
     </dependency>
   </dependencies>
 
